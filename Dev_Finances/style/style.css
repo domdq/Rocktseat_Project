@@ -2,9 +2,144 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins';
+  font-family: "Poppins" sans-serif;
 }
+
+:root{
+  --color-darkblue: #363f5f
+}
+
 body{
   background: #f0f2f5;
   font-family: "Poppins" sans-serif;
+}
+
+h2{
+  margin-top: 3.2rem;
+  margin-bottom: 0.8rem;
+  color: var(--color-darkblue);
+  font-weight: 400;
+  font-family: 'Poppins';
+}
+
+.container{
+  width: min(90vw, 800px);
+  margin: 0 auto;
+}
+
+/* ============ Header ============ */
+
+header{
+  background: #2d4a22;
+  padding: 2rem 0rem  10rem;
+  text-align: center;
+}
+#logo{
+color: #fff;
+font-weight: 100;
+font-family: 'poppins';
+}
+
+/* ============= Balance ============ */
+
+#balance{
+  margin-top: -8rem;
+}
+
+#balance h2{
+  color: #fff;
+  font-family: 'Poppins';
+  margin-top: 0;
+}
+
+/* ============= Card ============ */
+
+.card{
+  background: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 0.25rem;
+  margin-bottom: 2rem;
+  color: var(--color-darkblue);
+}
+
+.card h3{
+font-weight: 400;
+font-size: 1rem;
+font-family: 'Poppins';
+}
+
+.card p{
+font-size: 2rem;
+line-height: 3rem;
+font-family: 'Poppins';
+margin-top: 1rem;
+}
+
+.card.Total{
+background: #49aa26;
+color: #fff;
+}
+/* ============= Table ============ */
+
+#data-table{
+width: 100%;
+  border-spacing: 0 0.5rem;
+    color: #969cb3;
+
+}
+
+table thead th:first-child,
+table tbody td:first-child{
+border-radius: 0.5rem 0 0 0.5rem;
+}
+
+table thead th {
+  background: #fff;
+  opacity: 0.6;
+  font-weight: 400;
+  padding: 1rem 2rem;
+  text-align: left;
+  font-family: 'Poppins';
+}
+
+table tr{
+  opacity: 0.7;
+}
+table tr:hover{
+  opacity: 1;
+}
+
+table tbody td {
+  background: #fff;
+  padding: 1rem 2rem;
+  font-weight: 400;
+  font-family: 'Poppins';
+}
+
+td.description{
+  color: var(--color-darkblue);
+}
+
+td.income{
+  color: #12a454;
+}
+
+td.expense{
+  color: #e92929;
+}
+
+/* ============ footer ============ */
+
+footer{
+  text-align: center;
+  padding: 4rem 0 2rem;
+  color: var(--color-darkblue);
+  opacity: 0,6;
+  font-family: 'Poppins';
+}
+
+#footer{
+  font-family: 'Poppins';
+  color: var(--color-darkblue);
+  opacity: 0,6;
 }

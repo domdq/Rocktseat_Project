@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
-    <header class="logo">
-      <h1>Dev.Finance$</h1>
+    <header>
+      <h1 id="logo">Dev.Finance$</h1>
     </header>
 
-    <main>
+    <main class="container">
       <section id="balance">
         <h2>Balanço</h2>
         <div class="card">
@@ -28,7 +28,7 @@
           <h3>Saídas</h3>
           <p>R$ 2.000,00</p>
         </div>
-        <div class="card">
+        <div class="card Total">
           <h3>Total</h3>
           <p>R$ 3.000,00</p>
         </div>
@@ -45,19 +45,19 @@
           </thead>
           <tbody>
             <tr>
-              <td>Luz</td>
-              <td>- R$ 500,00</td>
-              <td>01/07/2024</td>
+              <td class="description">Luz</td>
+              <td class="expense">- R$ 500,00</td>
+              <td class="date">01/07/2024</td>
             </tr>
             <tr>
-              <td>Água</td>
-              <td>- R$ 300,00</td>
-              <td>01/07/2024</td>
+              <td class="description">Salario</td>
+              <td class="income">R$ 5.00,00</td>
+              <td class="date">01/07/2024</td>
             </tr>
             <tr>
-              <td>Salario</td>
-              <td>- R$ 5.00,00</td>
-              <td>01/07/2024</td>
+              <td class="description">Água</td>
+              <td class="expense">- R$ 300,00</td>
+              <td class="date">01/07/2024</td>
             </tr>
           </tbody>
         </table>
@@ -65,7 +65,7 @@
     </main>
 
     <footer>
-      <p>Dev.Finances</p>
+      <p id="footer">Dev.Finance$</p>
     </footer>
     <script src="./app.js"></script>
   </body>
