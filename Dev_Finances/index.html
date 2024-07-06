@@ -56,32 +56,7 @@
               <th></th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td class="description">Luz</td>
-              <td class="expense">- R$ 500,00</td>
-              <td class="date">01/07/2024</td>
-              <td>
-                <img src="./assets/minus.svg" alt="" />
-              </td>
-            </tr>
-            <tr>
-              <td class="description">Salario</td>
-              <td class="income">R$ 5.00,00</td>
-              <td class="date">01/07/2024</td>
-              <td>
-                <img src="./assets/minus.svg" alt="" />
-              </td>
-            </tr>
-            <tr>
-              <td class="description">Água</td>
-              <td class="expense">- R$ 300,00</td>
-              <td class="date">01/07/2024</td>
-              <td>
-                <img src="./assets/minus.svg" alt="" />
-              </td>
-            </tr>
-          </tbody>
+          <tbody></tbody>
         </table>
       </section>
     </main>
@@ -123,7 +98,9 @@
               <input type="date" id="date" name="date" placeholder="Data" />
             </div>
             <div class="input-group action">
-              <a onclick="close()" href="#" class="cancel button">Cancelar</a>
+              <a onclick="modal.close()" href="#" class="cancel button"
+                >Cancelar</a
+              >
               <button>Salvar</button>
             </div>
           </form>
@@ -131,17 +108,6 @@
       </div>
     </div>
 
-    <script>
-      const modal = {
-        open() {
-          document.querySelector(".modal-overlay");
-          classList.add("ativo");
-        },
-        close() {
-          document.querySelector(".modal-overlay");
-          classList.remove("ativo");
-        },
-      };
-    </script>
+    <script src="./app.js"></script>
   </body>
 </html>
